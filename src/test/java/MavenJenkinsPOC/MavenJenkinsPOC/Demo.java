@@ -27,7 +27,13 @@ static WebDriver driver = null;
 //		WebDriverWait wait = new WebDriverWait(driver, 10);
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='text' and @placeholder='From']"))).sendKeys("Kolkata");
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Kolkata')]"))).click();
+		try {
+			System.out.println(System.getProperty("platformName"));
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			System.out.println("Failureeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+		}
 		
-		System.out.println(System.getProperty("platformName"));
 	}
 }
